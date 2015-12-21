@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Interact with JS and invoke another App
+title: Interaction between OC and html[JS]
 ---
 
 **Remember url ignores case**
-### The html page
+
+### 0. The html page
 ```html
 <html>
 <head>
@@ -27,6 +28,7 @@ title: Interact with JS and invoke another App
 </body>
 </html>
 ```
+
 ### 1. Setup index.html
 ```objective-c
 - (void)viewDidLoad {
@@ -68,7 +70,7 @@ title: Interact with JS and invoke another App
 	 "script.type = 'text/javascript';"
 	 "script.text = \"function myFunction() { "
 	 "var field = document.getElementsByName('word')[0];"
-	 "field.value='WWDC2014';"
+	 "field.value='WWDC2015';"
 	 "document.forms[0].submit();"
 	 "}\";"
 	 "document.getElementsByTagName('head')[0].appendChild(script);"];
@@ -77,19 +79,15 @@ title: Interact with JS and invoke another App
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-	//1.Invoke the document object.
-  //We can preview 'document.title' in the console of browser.
-	NSLog(@"%@", [self.webView
-  stringByEvaluatingJavaScriptFromString:@"document.title"]);
-
-	//2.Invoke JS
+	//Invoke JS
 	[self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
 
-  //3.Inject JS into Baidu
+  //Inject JS into Baidu
   [self injectJSintoBaidu];
 }
 ```
-### 3. Invoke OC from JS
+
+### 3. Invoke OC from html（Response the invoke from hyperlinks）
 ```objective-c
 //YES if the web view should begin loading content; otherwise, NO.
 - (BOOL)webView:(UIWebView *)webView
