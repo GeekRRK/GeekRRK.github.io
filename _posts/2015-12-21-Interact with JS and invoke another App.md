@@ -33,7 +33,7 @@ title: Interaction between OC and html[JS]
 ```objective-c
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     NSString *url = @"<html>\
     <head>\
     <meta xmlns=\"http://www.w3.org/1999/xhtml\" http-equiv=\"Content-Type\"\
@@ -79,11 +79,11 @@ title: Interaction between OC and html[JS]
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-	//Invoke JS
-	[self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
+    //Invoke JS
+    [self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
 
-  //Inject JS into Baidu
-  [self injectJSintoBaidu];
+    //Inject JS into Baidu
+    [self injectJSintoBaidu];
 }
 ```
 
