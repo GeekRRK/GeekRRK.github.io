@@ -21,7 +21,8 @@ title: Interaction between OC and html[JS]
 <body>
     <h1>Interact between OC and JS</h1>
     <!-- Customize the protocol that calling OC -->
-    <a href="protocol://ocmethod/geekrrk.github.io">Click here, invoke method of OC.</a>
+    <a href="protocol://ocmethod/geekrrk.github.io">Click here,
+    invoke method of OC.</a>
     <br/>
     <br/>
     <a href="http://m.baidu.com">Inject JS into the html of baidu.</a>
@@ -48,7 +49,8 @@ title: Interaction between OC and html[JS]
     <body>\
     <h1>Interact between OC and JS</h1>\
     <!-- Customize the protocol that calling OC -->\
-    <a href=\"protocol://ocmethod/geekrrk.github.io\">Click here, invoke method of OC.</a>\
+    <a href=\"protocol://ocmethod/geekrrk.github.io\">Click here,
+    invoke method of OC.</a>\
     <br/>\
     <br/>\
     <a href=\"http://m.baidu.com\">Inject JS into the html of baidu.</a>\
@@ -87,7 +89,7 @@ title: Interaction between OC and html[JS]
 }
 ```
 
-### 3. Invoke OC from html（Response the invoke from hyperlinks）
+### 3. Invoke OC from html（Response the invocation from hyperlinks）
 ```objective-c
 //YES if the web view should begin loading content; otherwise, NO.
 - (BOOL)webView:(UIWebView *)webView
@@ -123,4 +125,5 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 	[self.webView loadRequest:request];
 }
 ```
-**Original website is:** *http://blog.csdn.net/xn4545945/article/details/36487407*
+**Original website is:**
+*http://blog.csdn.net/xn4545945/article/details/36487407*
