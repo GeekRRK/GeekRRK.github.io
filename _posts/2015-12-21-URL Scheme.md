@@ -39,7 +39,7 @@ openURL:[NSURL URLWithString:@"telprompt://10086"]];
  sourceApplication:(NSString *)sourceApplication
         annotation:(id)annotation
 {
-    if ([sourceApplication isEqualToString:@"AC.achao.com"]) {
+    if ([sourceApplication isEqualToString:@"com.Geek.Al"]) {
         NSLog(@"%@", sourceApplication);   //From which App（Bundle identifier）
         NSLog(@"scheme:%@", [url scheme]); //url scheme
         NSLog(@"query: %@", [url query]);  //query string  use“?param=ios”format
