@@ -5,7 +5,7 @@ title: URL Scheme
 
 ### 0. Return App when finish the tel calling
 ```objective-c
-//This is legal for AppStore
+//Legal for AppStore
 - (void) dialPhoneNumber:(NSString *)aPhoneNumber
 {
     NSURL *phoneURL = [NSURL URLWithString:[NSString
@@ -13,8 +13,9 @@ title: URL Scheme
     [self.phoneCallWebView loadRequest:[NSURLRequest requestWithURL:phoneURL]];
 }
 
-//This is illegal for AppStore
-[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"telprompt://10086"]];
+//Illegal for AppStore
+[[UIApplication sharedApplication]
+openURL:[NSURL URLWithString:@"telprompt://10086"]];
 ```
 
 ### 1. Customize URL Scheme
@@ -33,12 +34,15 @@ title: URL Scheme
 }
 
 //Priority is higher than above method
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+-(BOOL)application:(UIApplication *)application
+           openURL:(NSURL *)url
+ sourceApplication:(NSString *)sourceApplication
+        annotation:(id)annotation
 {
     if ([sourceApplication isEqualToString:@"AC.achao.com"]) {
-        NSLog(@"%@", sourceApplication);    //From which App（Bundle identifier）
-        NSLog(@"scheme:%@", [url scheme]);  //url scheme
-        NSLog(@"query: %@", [url query]);   //query string  use“?param=ios”format
+        NSLog(@"%@", sourceApplication);   //From which App（Bundle identifier）
+        NSLog(@"scheme:%@", [url scheme]); //url scheme
+        NSLog(@"query: %@", [url query]);  //query string  use“?param=ios”format
         return YES;
     } else {
         return NO;
