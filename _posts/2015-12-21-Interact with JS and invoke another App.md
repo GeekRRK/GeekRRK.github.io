@@ -2,7 +2,9 @@
 layout: post
 title: Interact with JS and invoke another App
 ---
-### The html which UIWebView will jump into
+
+**Remember url ignores case**
+### The html page
 ```html
 <html>
 <head>
@@ -18,74 +20,48 @@ title: Interact with JS and invoke another App
 <body>
     <h1>Interact between OC and JS</h1>
     <!-- Customize the protocol that calling OC -->
-    <a href="Protocol://param">Click here, invoke method of OC.</a>
+    <a href="protocol://ocmethod/geekrrk.github.io">Click here, invoke method of OC.</a>
     <br/>
     <br/>
     <a href="http://m.baidu.com">Inject JS into the html of baidu.</a>
 </body>
 </html>
 ```
-
-### 1. Invoke JS in OC
+### 1. Setup index.html
 ```objective-c
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
-	//1.Invoke the document object.
-  //We can preview 'document.title' in the console of browser.
-	NSLog(@"%@", [self.webView
-  stringByEvaluatingJavaScriptFromString:@"document.title"]);
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    NSString *url = @"<html>\
+    <head>\
+    <meta xmlns=\"http://www.w3.org/1999/xhtml\" http-equiv=\"Content-Type\"\
+    content=\"text/html; charset=utf-8\" />\
+    <title>The html which UIWebView will jump into</title>\
+    <script Type='text/javascript'>\
+    function clickme() {\
+        alert('Click me');\
+    }\
+    </script>\
+    </head>\
+    <body>\
+    <h1>Interact between OC and JS</h1>\
+    <!-- Customize the protocol that calling OC -->\
+    <a href=\"protocol://ocmethod/geekrrk.github.io\">Click here, invoke method of OC.</a>\
+    <br/>\
+    <br/>\
+    <a href=\"http://m.baidu.com\">Inject JS into the html of baidu.</a>\
+    </body>\
+    </html>";
 
-	//2.Invoke JS
-	[self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
+    [self.webView loadHTMLString:url baseURL:nil];
+
+    self.webView.delegate = self;
 }
 ```
-### 2. Invoke OC in JS
+
+### 2. Invoke JS from OC or inject JS into html
 ```objective-c
-//YES if the web view should begin loading content; otherwise, NO,
-//will invoke JS.
-- (BOOL)webView:(UIWebView *)webView
-shouldStartLoadWithRequest:(NSURLRequest *)request
-            navigationType:(UIWebViewNavigationType)navigationType {
-	NSLog(@"%@", request.URL.absoluteString);
-	NSString *urlStr = request.URL.absoluteString;
-
-	if ([urlStr hasPrefix:@"Protocol://"]) {
-		NSString *urlContent = [urlStr substringFromIndex:[@"Protocol://" length]];
-		NSLog(@"%@", urlContent);
-
-		NSArray *urls = [urlContent componentsSeparatedByString:@"/"];
-		NSLog(@"Components:%@", urls);
-
-		if (urls.count != 2) {
-			return NO;
-		}
-		NSString *funName = [NSString stringWithFormat:@"%@:", urls[0]];
-
-		SEL callFun = NSSelectorFromString(funName);
-# pragma clang diagnostic push
-# pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-	  [self performSelector:callFun withObject:urls[1]];
-# pragma clang diagnostic pop
-		NSLog(@"MethodName:%@, Param:%@", funName, urls[1]);
-
-		return NO;
-	}
-
-	return YES;
-}
-
-- (void)loadUrl:(NSString *)urlStr {
-	NSLog(@"Param: %@", urlStr);
-
-	NSURL *url = [NSURL URLWithString:[NSString
-  stringWithFormat:@"http://%@", urlStr]];
-	NSURLRequest *request = [NSURLRequest requestWithURL:url];
-
-	[self.webView loadRequest:request];
-}
-```
-### 3. Inject JS
-```objective-c
-- (void)jsClick {
+- (void)injectJSintoBaidu {
 	[self.webView
    stringByEvaluatingJavaScriptFromString:
    @"var script = document.createElement('script');"
@@ -99,6 +75,54 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 	[self.webView stringByEvaluatingJavaScriptFromString:@"myFunction();"];
 }
-```
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	//1.Invoke the document object.
+  //We can preview 'document.title' in the console of browser.
+	NSLog(@"%@", [self.webView
+  stringByEvaluatingJavaScriptFromString:@"document.title"]);
+
+	//2.Invoke JS
+	[self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
+
+  //3.Inject JS into Baidu
+  [self injectJSintoBaidu];
+}
+```
+### 3. Invoke OC from JS
+```objective-c
+//YES if the web view should begin loading content; otherwise, NO.
+- (BOOL)webView:(UIWebView *)webView
+shouldStartLoadWithRequest:(NSURLRequest *)request
+            navigationType:(UIWebViewNavigationType)navigationType {
+	NSString *urlStr = request.URL.absoluteString;
+
+	if ([urlStr hasPrefix:@"protocol://"]) {
+		NSString *urlContent = [urlStr substringFromIndex:[@"protocol://" length]];
+		NSArray *urls = [urlContent componentsSeparatedByString:@"/"];
+
+		if (urls.count != 2) {
+			return NO;
+		}
+
+		NSString *funName = [NSString stringWithFormat:@"%@:", urls[0]];
+		SEL callFun = NSSelectorFromString(funName);
+# pragma clang diagnostic push
+# pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+	  [self performSelector:callFun withObject:urls[1]];
+# pragma clang diagnostic pop
+		return NO;
+	}
+
+	return YES;
+}
+
+- (void)ocmethod:(NSString *)urlStr {
+	NSURL *url = [NSURL URLWithString:[NSString
+  stringWithFormat:@"http://%@", urlStr]];
+	NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+	[self.webView loadRequest:request];
+}
+```
 **Original website is:** *http://blog.csdn.net/xn4545945/article/details/36487407*
