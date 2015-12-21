@@ -1,5 +1,8 @@
-# Interact with JS and invoke another App
-## The html which UIWebView will jump into
+---
+layout: post
+title: Interact with JS and invoke another App
+---
+### The html which UIWebView will jump into
 ```html
 <html>
 <head>
@@ -23,7 +26,7 @@
 </html>
 ```
 
-## 1. Invoke JS in OC
+### 1. Invoke JS in OC
 ```objective-c
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 	//1.Invoke the document object.
@@ -35,7 +38,7 @@
 	[self.webView stringByEvaluatingJavaScriptFromString:@"clickme()"];
 }
 ```
-## 2. Invoke OC in JS
+### 2. Invoke OC in JS
 ```objective-c
 //YES if the web view should begin loading content; otherwise, NO,
 //will invoke JS.
@@ -80,7 +83,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 	[self.webView loadRequest:request];
 }
 ```
-## 3. Inject JS
+### 3. Inject JS
 ```objective-c
 - (void)jsClick {
 	[self.webView
@@ -98,4 +101,4 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 }
 ```
 
-**Original website is:** http://blog.csdn.net/xn4545945/article/details/36487407
+**Original website is:** *http://blog.csdn.net/xn4545945/article/details/36487407*
