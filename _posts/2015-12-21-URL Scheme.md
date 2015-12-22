@@ -66,3 +66,4 @@ in *Info.plist*. The limitation is 50.
     <string>weixin</string>  
 </array>
 ```
+Refer to: <http://blog.sina.com.cn/s/blog_877e9c3c0102v0m5.html>

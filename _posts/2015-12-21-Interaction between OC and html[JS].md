@@ -125,5 +125,4 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 	[self.webView loadRequest:request];
 }
 ```
-**Original website is:**
-*http://blog.csdn.net/xn4545945/article/details/36487407*
+Refer to: <http://blog.csdn.net/xn4545945/article/details/36487407>
