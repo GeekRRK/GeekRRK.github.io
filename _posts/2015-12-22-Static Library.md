@@ -116,5 +116,5 @@ when referred in the .mm files. This might because the linker only go into
 .cpp and .c files to scan the C functions when dealing with .mm files
 because there is no link error when the C functions were referred in .cpp files.
 The solution is that we can write class methods to invoke the global C functions
-in the .m files and just give the OC class methods to other classes.  
+in the .m files and just expose the OC class methods to other classes.  
 Refer to: <http://blog.sina.com.cn/s/blog_7a2ffd5c010150xb.html>
