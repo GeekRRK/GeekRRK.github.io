@@ -49,7 +49,7 @@ title: Interaction between OC and html[JS]
     <body>\
     <h1>Interact between OC and JS</h1>\
     <!-- Customize the protocol that calling OC -->\
-    <a href=\"protocol://ocmethod/geekrrk.github.io\">Click here,
+    <a href=\"protocol://ocmethod/geekrrk.github.io\">Click here, \
     invoke method of OC.</a>\
     <br/>\
     <br/>\
