@@ -64,7 +64,7 @@ that doesn't exist in Xcode5-.
 
 Refer to: <http://www.cnblogs.com/zhw511006/p/4155930.html>  
 
-<h1 style="text-align:center">Use framework dynamicly</h1>
+<h1 style="text-align:center">Use framework dynamically</h1>
 ### 1. Set Build Phases
 Put the framework into the following zones.  
 Targets -> Build Phases -> Link Binary With Libraries  
