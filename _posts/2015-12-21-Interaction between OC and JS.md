@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interaction between OC and html[JS]
+title: Interaction between OC and JS
 ---
 
 **Remember url ignores case**

@@ -28,11 +28,11 @@ Check it and double click the *none* and set a shortcut.
 <h1 style="text-align:center">Script Editor</h1>
 1.　Open Script Editor and copy the following code into it.
 {% highlight sh %}
-display dialog "隐藏/显示隐藏文件" buttons {"可见", "隐藏"} with icon 2 with title "Switch to presentation mode" default button 1
+display dialog "Hide/Show the invisible files" buttons {"Show", "Hide"} with icon 2 with title "Switch to presentation mode" default button 1
 
 set switch to button returned of result
 
-if switch is "隐藏" then
+if switch is "Hide" then
 	do shell script "defaults write com.apple.finder AppleShowAllFiles -bool false;
 KillAll Finder"
 
