@@ -19,8 +19,8 @@ openURL:[NSURL URLWithString:@"telprompt://10086"]];
 ```
 
 ### 1. Customize URL Scheme
-![URL Scheme]({{site.baseurl}}/assets/URL_Scheme.png)  
-![URL Types]({{site.baseurl}}/assets/URL Types.png)
+![URL Types]({{site.baseurl}}/assets/url_scheme/url_types.png)  
+![URL Types1]({{site.baseurl}}/assets/url_scheme/url_types1.png)
 
 ### 2. Overide handler
 ```objective-c
