@@ -65,4 +65,8 @@ after *{% raw %}{{ content }}{% endraw %}*
 `$ git commit -m "Add comments"`  
 `$ push origin gh-pages`  
 Fire up a browser and go to *http://GeekRRK.github.io/Blog*.
-If the comments don't appear, refresh the website after a few minutes.
+If the comments don't appear, refresh the website after a few minutes.  
+
+Learn more:  
+<http://www.aips.me/github-pages-build-blog.html#toc-21>  
+<http://blog.csdn.net/on_1y/article/details/19259435>
