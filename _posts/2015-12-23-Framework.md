@@ -87,6 +87,7 @@ Use *dlopen* to load the framework, the real executable code is
 #import <dlfcn.h>
 #import <mach-o/dyld.h>
 
+//Be careful with the path of the framework we want to load with which method.
 #define BUNDLEPATH_DLOPEN [[NSBundle mainBundle] pathForResource:@"MyFramework.framework/MyFramework" ofType:nil];
 #define BUNDLEPATH_NSBUNDLE [[NSBundle mainBundle] pathForResource:@"MyFramework.framework" ofType:nil];
 
@@ -175,3 +176,46 @@ static void image_removed(const struct mach_header *mh, intptr_t slide)
 {% endhighlight %}
 
 Refer to: <http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/>
+
+<h1 style="text-align:center">Package resources into framework</h1>
+### 1. Drag xib and image to *Copy Bundle Resources* of framework project.
+Remember to drag them to *Embedded Binaries* if the framework is dynamic.  
+![Copy Bundle Resources]({{site.baseurl}}/assets/framework/copybundle.png)  
+
+### 2. Choose aggregate and build.
+We can find the xib and image in the directory of framework  
+![Directory of framework]({{site.baseurl}}/assets/framework/framework_directory.png)  
+
+### 3. Load the xib and image from main bundle
+{% highlight objective-c %}
+[[NSBundle mainBundle]
+loadNibNamed:@"MyFramework.framework/View"
+       owner:nil
+     options:nil];
+
+[[NSBundle mainBundle] pathForResource:@"MyFramework.framework/img"
+                                ofType:@"jpg"];
+{% endhighlight %}
+
+### 4. Load resource from other bundle.
+Create a directory and put the image into it then name the direcotry as
+ *myBundle.bundle*. Drag the bundle to our project.  
+
+{% highlight objective-c %}
++ (NSString *)pathForResource:(NSString *)name ofType:(NSString *)type {
+    NSBundle *myBundle = [NSBundle
+      bundleWithPath:[[NSBundle mainBundle]
+     pathForResource:@"myBundle"
+              ofType:@"bundle"]];
+    [myBundle load];
+    NSString* path = [myBundle pathForResource:name ofType:type];
+    return path;
+}
+{% endhighlight %}
+
+Refer to: <http://blog.csdn.net/xyxjn/article/details/42527341>  
+
+When finish this blog, we might wonder that can we use this tech as dynamic
+plugin and bypass the review of AppStore. People say it won't work. And Apple Inc.
+only allow the *lua* to update App dynamically.
+See this site: <http://www.cocoachina.com/bbs/read.php?tid=129723>
