@@ -3,14 +3,14 @@ layout: post
 title: Framework
 ---
 
-<h1 style="text-align:center">Dynamic Framework</h1>
-### 1. Create a Cocoa Touch Framework
+<h1 class="post-center-title">Dynamic Framework</h1>
+### 0. Create a Cocoa Touch Framework
 ![Cocoa Touch Framework]({{site.baseurl}}/assets/framework/cocoatouch_framework.png)  
 Write some class and put their headers into the header of framework while must
 place them into the public zone.
 ![Public header]({{site.baseurl}}/assets/framework/public_header.png)
 
-### 2. Build twice for simulator and iPhones
+### 1. Build twice for simulator and iPhones
 These steps are same as [Static Library](http://geekrrk.github.io/Blog/2015/12/22/Static%20Library.html)
 except combining the two frameworks into one. So make the aggregate framework.  
 If use *lipo* command to combine them, remember to go into the direcotry
@@ -52,20 +52,20 @@ open "${INSTALL_DIR}"
 ![Run Script]({{site.baseurl}}/assets/framework/run_script.png)  
 Choose the target and build. It will popup the aggregate framework in the finder if everything is ok.
 
-### 3. Use the framework in another project
+### 2. Use the framework in another project
 Remember to drag the framework into Embedded Binaries zone that is only
 available in Xcode6+.  
 ![embedded_binaries]({{site.baseurl}}/assets/framework/embedded_binaries.png)  
 
-<h1 style="text-align:center">Static Library available in Xcode5-</h1>
+<h1 class="post-center-title">Static Library available in Xcode5-</h1>
 ![Static Library]({{site.baseurl}}/assets/framework/static_library.png)  
 Now we don't need to drag the framework into the Embedded Binaries zone
 that doesn't exist in Xcode5-.  
 
 Refer to: <http://www.cnblogs.com/zhw511006/p/4155930.html>  
 
-<h1 style="text-align:center">Use framework dynamically</h1>
-### 1. Set Build Phases
+<h1 class="post-center-title">Use framework dynamically</h1>
+### 0. Set Build Phases
 Put the framework into the following zones.  
 Targets -> Build Phases -> Link Binary With Libraries  
 Targets -> Build Phases -> Copy Bundle Resources  
@@ -80,7 +80,7 @@ If don't want to load the framework when the App launches, we can set the
 *Status* to Optional in *Link Binary With Libraries* or delete it.
 ![Optional]({{site.baseurl}}/assets/framework/optional.png)  
 
-### 2. Load the framework
+### 1. Load the framework
 Use *dlopen* to load the framework, the real executable code is
  *MyFramework.framework/MyFramework*, so don't forget *MyFramework*.
 {% highlight objective-c %}
@@ -134,7 +134,7 @@ just use *MyFramework.framework* as the path.
 }
 {% endhighlight %}
 
-### 3. Invoke the method of the framework  
+### 2. Invoke the method of the framework  
 {% highlight objective-c %}
 - (IBAction)onTriggerButtonAction:(id)sender
 {
@@ -155,7 +155,7 @@ just use *MyFramework.framework* as the path.
 }
 {% endhighlight %}
 
-### 4. Monitoring the adding and removing of frameworks
+### 3. Monitoring the adding and removing of frameworks
 We can register the callback for the adding or removing of the framework.  
 {% highlight objective-c %}
 static void image_added(const struct mach_header *mh, intptr_t slide)
@@ -177,16 +177,16 @@ static void image_removed(const struct mach_header *mh, intptr_t slide)
 
 Refer to: <http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/>
 
-<h1 style="text-align:center">Package resources into framework</h1>
-### 1. Drag xib and image to *Copy Bundle Resources* of framework project.
+<h1 class="post-center-title">Package resources into framework</h1>
+### 0. Drag xib and image to *Copy Bundle Resources* of framework project.
 Remember to drag them to *Embedded Binaries* if the framework is dynamic.  
 ![Copy Bundle Resources]({{site.baseurl}}/assets/framework/copybundle.png)  
 
-### 2. Choose aggregate and build.
+### 1. Choose aggregate and build.
 We can find the xib and image in the directory of framework  
 ![Directory of framework]({{site.baseurl}}/assets/framework/framework_directory.png)  
 
-### 3. Load the xib and image from main bundle
+### 2. Load the xib and image from main bundle
 {% highlight objective-c %}
 [[NSBundle mainBundle]
 loadNibNamed:@"MyFramework.framework/View"
@@ -197,7 +197,7 @@ loadNibNamed:@"MyFramework.framework/View"
                                 ofType:@"jpg"];
 {% endhighlight %}
 
-### 4. Load resource from other bundle.
+### 3. Load resource from other bundle.
 Create a directory and put the image into it then name the direcotry as
  *myBundle.bundle*. Drag the bundle to our project.  
 

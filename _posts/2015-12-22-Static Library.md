@@ -3,16 +3,16 @@ layout: post
 title: Static Library
 ---
 
-<h1 style="text-align:center">Create a new Library</h1>
-### 1. Create a new project
+<h1 class="post-center-title">Create a new Library</h1>
+### 0. Create a new project
 ![Choose template]({{site.baseurl}}/assets/static_library/choose_template.png)  
 Create a new project named *Print*
 
-### 2. Create methods
+### 1. Create methods
 Create a method named *print*, then write something like *NSLog* in it.
 Remember add the name of the method to header file.
 
-### 3. Set configurations and build twice
+### 2. Set configurations and build twice
 Set *Build Only Device* to *iPhone X* and go to *Manage Schemes* to
 set *Build Configuration* to *Release*.
 Build and get the lib for the architectures (i386 x86_64) for simulator.
@@ -30,36 +30,36 @@ Build and get the lib for the architectures (armv7 armv7s arm64) for iPhones.
 Go to directory *Release-iphones*, we can use *lipo -info libPrint.a* to
 see it's architectures are armv7 armv7s arm64.
 
-### 4. Combine the 2 libs
+### 3. Combine the 2 libs
 Use `$ lipo -create X/Release-iphonesimulator/libPrint.a
 X/Release-iphoneos/libPrint.a -output X/Desktop/libPrint.a` to
 combine the 2 libs.  
 Use `$ lipo -info X/Desktop/libPrint.a`
 to ensure it contains the 5 architectures mentioned before.
 
-### 5. Create another project to invoke the lib we just built
+### 4. Create another project to invoke the lib we just built
 Add *Print.h* and *libPrint.a* to the project. Import *Print.h* and
 invoke the method existing in it.
 
 Refer to: <http://blog.csdn.net/pjk1129/article/details/7255163>
 
-<h1 style="text-align:center">Create a Library based an existing project</h1>
-### 1. Create a static library target
+<h1 class="post-center-title">Create a Library based an existing project</h1>
+### 0. Create a static library target
 File -> New -> Target -> Cocoa Touch Static Library  
 ![Target]({{site.baseurl}}/assets/static_library/target.png)  
 
-### 2. Drag all the files we want to be available in the lib to the lib directory
+### 1. Drag all the files we want to be available in the lib to the lib directory
 Add the .h and .m files and related lib files if needed to the directory of
 library we just created. (Alternatively, we can delete all the files in
   the existing project and add them to the library directory then
   choose both targets on the popup dialog box)  
 ![Add files to lib]({{site.baseurl}}/assets/static_library/add_files_to_lib.png)
 
-### 3. Build project
+### 2. Build project
 Choose *TestPrintLib* and do the same things as
 the step 3, 4, 5 we wrote in **Create a new Library**.
 
-<h1 style="text-align:center">About Architecture</h1>
+<h1 class="post-center-title">About Architecture</h1>
 ### All kinds of Architecture
 * armv6
  * iPhone
@@ -79,7 +79,7 @@ the step 3, 4, 5 we wrote in **Create a new Library**.
 
 Refer to: <http://blog.csdn.net/u011545443/article/details/42294883>
 
-<h1 style="text-align:center">Conflicting among Architectures</h1>
+<h1 class="post-center-title">Conflicting among Architectures</h1>
 > IMPORTANT: For 64-bit and iPhone OS applications, there is a
 linker bug that prevents -ObjC from loading objects files from
 static libraries that contain only categories and no classes.
