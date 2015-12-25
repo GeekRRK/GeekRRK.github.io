@@ -29,8 +29,6 @@ title: Valuable websites
 [GitHubPages](https://pages.github.com)  
 [Jekyll](https://jekyllrb.com)  
 [Liquid](http://liquidmarkup.org)  
-[Atom](https://atom.io)  
-[Sketch](http://www.sketchapp.com)  
 
 # ThirdParty
 [PGYER](http://www.pgyer.com)  
@@ -46,6 +44,12 @@ title: Valuable websites
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  
 [W3cBus Tool](http://www.w3cbus.com/tool)   
 [Privnote](https://privnote.com)  
+[Mou](http://25.io)  
+[PicGIF Lite](https://itunes.apple.com/us/app/picgif-lite/id844918735?mt=12)   
+[Atom](https://atom.io)  
+[Sketch](http://www.sketchapp.com)  
+[Lantern](https://getlantern.org)  
+[Alfred](https://www.alfredapp.com)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
