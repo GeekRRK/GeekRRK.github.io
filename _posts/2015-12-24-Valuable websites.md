@@ -5,6 +5,7 @@ title: Valuable websites
 
 # Community
 [GitHub](https://github.com)  
+[Bitbucket](https://bitbucket.org)  
 [StackOverflow](http://stackoverflow.com)  
 [CocoaChina](http://www.cocoachina.com)  
 [CSDN](http://www.csdn.net)  
