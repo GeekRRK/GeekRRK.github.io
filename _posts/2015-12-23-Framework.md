@@ -92,9 +92,17 @@ Use *dlopen* to load the framework, the real executable code is
 #define BUNDLEPATH_NSBUNDLE [[NSBundle mainBundle] pathForResource:@"MyFramework.framework" ofType:nil];
 
 // This is for Documents path of sandbox when we download the framework
-// to the sandbox.
+// to the sandbox. We can use *ZipArchive*, which depends *libz.dylib*
+// or *libz.tbd*, to zip or unzip the framework. Remember when zip the framework,
+// we should go into the directory of the framework to zip all, otherwise the
+// directory of the framework will look like this: *.../MyFramework.framework/MyFramework.framework/...*
 // #define DOCUMENTSPATH_DLOPEN [NSString stringWithFormat:@"%@/Documents/MyFramework.framework/MyFramework", NSHomeDirectory()];
 // #define DOCUMENTSPATH_NSBUNDLE [NSString stringWithFormat:@"%@/Documents/MyFramework.framework", NSHomeDirectory()];
+/*
+This is another way to get the document directory of sandbox.
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+NSString *docDir = [paths objectAtIndex:0];
+*/
 
 - (IBAction)onDlopenLoadAtPathAction:(id)sender
 {
@@ -142,7 +150,7 @@ just use *MyFramework.framework* as the path.
     if (rootClass) {
         id object = [[rootClass alloc] init];
 
-        //If the class in the framework we already known
+        //If the framework is already imported into project
         [(MyUtil *)object showMsg];
 
         //If the method of the class in the framework we already known
@@ -216,6 +224,7 @@ Create a directory and put the image into it then name the direcotry as
 Refer to: <http://blog.csdn.net/xyxjn/article/details/42527341>  
 
 When finish this blog, we might wonder that can we use this tech as dynamic
-plugin and bypass the review of AppStore. People say it won't work. And Apple Inc.
-only allow the *lua* to update App dynamically.
-See this site: <http://www.cocoachina.com/bbs/read.php?tid=129723>
+plugin and bypass the review of AppStore. People say it won't work because
+*_CodeSignature* or something else. And Apple Inc. only allow the *lua*
+to update App dynamically. See this site: <http://www.cocoachina.com/bbs/read.php?tid=129723>  
+This is my project: <https://github.com/GeekRRK/DyLoadFramework>
