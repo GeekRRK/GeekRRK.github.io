@@ -3,10 +3,6 @@ layout: post
 title: Use OpenSSL in iOS App
 ---
 
-**Remember that CA has a root certificate which can verify the certificate signed
-by CA.**  
-![SSL]({{site.baseurl}}/assets/use_openssL_in_ios_app/ssl.png)  
-
 ### 0. Download source code
 <http://www.openssl.org/source>  
 Get the latest version, for example, openssl-1.0.2e.
