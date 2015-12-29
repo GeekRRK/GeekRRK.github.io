@@ -39,8 +39,7 @@ title: Valuable websites
 [Umeng](http://www.umeng.com)  
 [RongCloud](http://rongcloud.cn)  
 [JPush](https://www.jpush.cn)  
-[Disqus](https://disqus.com)  
-[WoSign Free SSL](https://buy.wosign.com/free/#ssl)  
+[Disqus](https://disqus.com)    
 
 # Tool
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  

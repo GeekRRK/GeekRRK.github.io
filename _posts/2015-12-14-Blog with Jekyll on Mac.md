@@ -17,7 +17,7 @@ title: Blog with Jekyll on Mac
 ###2. Running Jekyll
 `$ bundle exec jekyll build`  
 `$ bundle exec jekyll serve`  
-Fire up a browser and go to *http://localhost:4000*  
+Fire up a browser and go to <http://localhost:4000>  
 
 ###3. Pushing to GitHub
 `$ vim _config.yml` Comment *markdown: kramdown* then add *markdown: redcarpet*
@@ -27,10 +27,10 @@ to it and modify *baseurl: /Blog*.
 `$ git add .`  
 `$ git commit -m "Initial commit"`  
 `$ git push origin gh-pages`  
-Fire up a browser and go to *http://GeekRRK.github.io/Blog*
+Fire up a browser and go to <http://GeekRRK.github.io/Blog>
 
 ###4. Adding comments
-Register *http://GeekRRK.github.io* on *http://disqus.com*
+Register *http://GeekRRK.github.io* on <http://disqus.com>
 and get the shortname *geekrrk*.  
 `$ vim _config.yml` Add *disqusname: geekrrk* to it.  
 `$ cd _includes`  
@@ -64,7 +64,7 @@ after *{% raw %}{{ content }}{% endraw %}*
 `$ git add .`  
 `$ git commit -m "Add comments"`  
 `$ push origin gh-pages`  
-Fire up a browser and go to *http://GeekRRK.github.io/Blog*.
+Fire up a browser and go to <http://GeekRRK.github.io/Blog>.
 If the comments don't appear, refresh the website after a few minutes.  
 
 Learn more:  
