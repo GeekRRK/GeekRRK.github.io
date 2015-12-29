@@ -3,23 +3,23 @@ layout: post
 title: Install Apps on iPhone Devices
 ---
 
-### 1. Install the WWDR Intermediate Certificate
+### 0. Install the WWDR Intermediate Certificate
 
-### 2. Request a certificate from a certificate authority
-1. Applications -> Utilities -> Keychain Access ->
+### 1. Request a certificate from a certificate authority
+Applications -> Utilities -> Keychain Access ->
 Certificate Assistant -> Request Certificate from A Certificate Authority
-2. Upload the Certificate to create Development and Production
+Upload the Certificate to create Development and Production
 certificates.
 
-### 3. Create an App ID
+### 2. Create an App ID
 
-### 4. Create Provisioning Profile
+### 3. Create Provisioning Profile
 
 Refer to: <http://www.cnblogs.com/85538649/archive/2011/10/28/2227270.html>  
 Learn more: <http://www.cocoachina.com/bbs/read.php?tid-330302.html>  
 
 <h1 class="post-center-title">Detail about Enterprise</h1>
-1.　**plist:**  
+**plist:**  
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -66,7 +66,7 @@ Learn more: <http://www.cocoachina.com/bbs/read.php?tid-330302.html>
 </plist>
 {% endhighlight %}  
 
-2.　**Download address:**  
+**Download address:**  
 itms-services://?action=download-manifest&url=https://www.example.com/apps/foo.plist  
 
 <h1 class="post-center-title">Detail about Review of AppStore</h1>
