@@ -7,7 +7,7 @@ title: Install Apps on iPhone Devices
 
 ### 1. Request a certificate from a certificate authority
 Applications -> Utilities -> Keychain Access ->
-Certificate Assistant -> Request Certificate from A Certificate Authority
+Certificate Assistant -> Request Certificate from A Certificate Authority  
 Upload the Certificate to create Development and Production
 certificates.
 
@@ -77,5 +77,5 @@ Tel of Apple: <https://developer.apple.com/contact/phone.php>
 Refer to: <http://blog.csdn.net/kesalin/article/details/6605934>  
 Remember to add *cn* to the address when the app is aimed to China.  
 Search in browser, see the following format:  
-https://itunes.apple.com/cn/app/xiao-yuan-ying-xiao-zhu-shou/id985559724?mt=8  
-https://itunes.apple.com/cn/lookup?id=985559724
+*https://itunes.apple.com/cn/app/xiao-yuan-ying-xiao-zhu-shou/id985559724?mt=8*  
+*https://itunes.apple.com/cn/lookup?id=985559724*
