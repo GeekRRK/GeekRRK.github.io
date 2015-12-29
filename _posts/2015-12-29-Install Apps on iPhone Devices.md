@@ -20,7 +20,7 @@ Learn more: <http://www.cocoachina.com/bbs/read.php?tid-330302.html>
 
 <h1 class="post-center-title">Detail about Enterprise</h1>
 1.　**plist:**  
-```xml
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -64,7 +64,7 @@ Learn more: <http://www.cocoachina.com/bbs/read.php?tid-330302.html>
 	</array>
 </dict>
 </plist>
-```
+{% endhighlight %}  
 
 2.　**Download address:**  
 itms-services://?action=download-manifest&url=https://www.example.com/apps/foo.plist  
