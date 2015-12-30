@@ -3,5 +3,37 @@ layout: post
 title: Frequent commands
 ---
 
-`defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder`  
-`defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder`
+### CocoaPods
+`$ pod install --verbose --no-repo-update`  
+`$ pod update --verbose --no-repo-update`  
+`$ gem sources --remove https://rubygems.org/`  
+`$ gem sources -a http://ruby.taobao.org/`  
+`$ gem sources -l`  
+`$ sudo gem update --system`  
+`$ sudo gem install cocoapods`  
+`$ rvm use ruby-1.9.3-p448`
+`$ pod search AFNetworking`  
+
+### Git
+Sync with author after fork
+`$ git clone -o forkversion https://github.com/geekrrk/test.git`  
+`$ git remote add originalversion https://github.com/originalauthor/test.git`  
+`$ git remote -v`  
+`$ git remote -vv`  
+`$ git remote rename oldname newname`  
+`$ git branch`  
+`$ git checkout originalversion`  
+`$ git pull`  
+`$ git checkout forkversion`  
+`$ git push forkversion master`
+
+`$ git checkout -b mywork origin`  
+`git fetch`  
+`$ git rebase origin`  
+`$ git merge origin`  
+
+`$ git branch -u upstream/foo foo`  
+`$ git branch --set-upstream-to=upstream/foo foo`  
+
+
+### Linux
