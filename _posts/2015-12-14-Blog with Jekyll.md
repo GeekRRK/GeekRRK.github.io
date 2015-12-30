@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog with Jekyll on Mac
+title: Blog with Jekyll
 ---
 
 ###0. Installing Jekyll
