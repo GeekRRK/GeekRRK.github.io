@@ -34,6 +34,7 @@ Sync with author after fork
 
 `$ git branch -u upstream/foo foo`  
 `$ git branch --set-upstream-to=upstream/foo foo`  
+`$ git branch -m oldname newname`  
 
 
 ### Linux
