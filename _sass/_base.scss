@@ -104,7 +104,49 @@ a {
     }
 }
 
+//Anchor Links
+a.anchor:link,
+a.anchor:visited,
+a.anchor:hover,
+a.anchor:active {
+color:#111111;
+text-decoration:none;
+}
 
+//ScrollToTopBtn
+.rTop{
+  width:100px;
+  height:25px;
+  text-align:center;
+  font-size:small;
+  line-height:25px;
+  border:1px
+  solid #999;
+  position:fixed;
+  right:0;
+  bottom:0;
+  border-bottom-color:#333;
+  border-right-color:#333;
+  margin:5px;
+  cursor:pointer;
+  display:none
+}
+
+//Left Content
+.rContent{
+  width:200px;
+  height:600px;
+  font-size:small;
+  line-height:25px;
+  border:1px
+  solid #999;
+  position:fixed;
+  left:0;
+  top:200;
+  border-bottom-color:#333;
+  border-right-color:#333;
+  margin:10px;
+}
 
 /**
  * Blockquotes

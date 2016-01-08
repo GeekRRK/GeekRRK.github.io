@@ -1,0 +1,64 @@
+---
+layout: post
+title: CodeSnippets
+---
+
+<a name="top" id="top"></a>
+<a class="rTop" id="rTop" href="#"
+onclick="document.getElemetnById('top').scrollIntoView(true); return false;">
+Top
+</a>
+
+<ul class="rContent" id="rContent" style="overflow:auto;">
+</ul>
+
+Clone the project from:
+<a href="https://github.com/GeekRRK/CodeSnippets.git">
+  https://github.com/GeekRRK/CodeSnippets.git
+</a>
+<br /><br />
+
+Snippets from Gist: <br />
+<div id="snippets">
+</div>
+
+<script>
+window.onscroll=function(){
+  if(document.body.scrollTop||document.documentElement.scrollTop>0){
+    document.getElementById('rTop').style.display="block"
+  }else{
+    document.getElementById('rTop').style.display="none"
+  }
+}
+
+var titleArr = [
+  "InputAccessoryView",
+  "UIImagePickerController",
+  "UIImageViewMode"
+];
+
+//Failed to marked each item with bullet
+function setContent() {
+  var contentListStr = "";
+  for(i = 0; i < titleArr.length; ++i) {
+    contentListStr += "<li><a href='#" + titleArr[i] + "'>" +
+    titleArr[i] + "</a></li>";
+  }
+  document.getElementById("rContent").innerHTML = contentListStr;
+}
+
+setContent();
+</script>
+
+<!--Failed to use loop because the js can't be inserted-->
+<a class='anchor' name='InputAccessoryView'>
+<script src="https://gist.github.com/GeekRRK/581006bc2d00bea4ccd6.js"></script>
+</a>
+
+<a class='anchor' name='UIImagePickerController'>
+<script src="https://gist.github.com/GeekRRK/608ef5ddc96870f4e769.js"></script>
+</a>
+
+<a class='anchor' name='UIImageViewMode'>
+<script src="https://gist.github.com/GeekRRK/ba8e97c72798ac4a4276.js"></script>
+</a>
