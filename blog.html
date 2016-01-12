@@ -6,7 +6,12 @@ title: Blog
 <ul>
     {% for post in site.posts %}
     <li>
-        {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      {{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;
+      {% if post.title == 'Frequent commands' or post.title == 'CodeSnippets' or post.title == 'Valuable websites' %}
+          <a class="Frequent" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      {% else %}
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
     </li>
     {% endfor %}
 </ul>

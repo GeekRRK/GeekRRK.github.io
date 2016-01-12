@@ -113,6 +113,28 @@ color:#111111;
 text-decoration:none;
 }
 
+//Frequent Links
+a.Frequent:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.Frequent:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.Frequent:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.Frequent:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 //ScrollToTopBtn
 .rTop{
   width:100px;
