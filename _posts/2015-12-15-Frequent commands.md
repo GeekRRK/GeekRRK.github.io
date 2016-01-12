@@ -11,8 +11,9 @@ title: Frequent commands
 `$ gem sources -l`  
 `$ sudo gem update --system`  
 `$ sudo gem install cocoapods`  
-`$ rvm use ruby-1.9.3-p448`
+`$ rvm use ruby-1.9.3-p448`  
 `$ pod search AFNetworking`  
+`$ pod spec create [NAME|https://github.com/USER/REPO]`  
 
 ### Git
 Sync with author after fork
@@ -25,7 +26,7 @@ Sync with author after fork
 `$ git checkout originalversion`  
 `$ git pull`  
 `$ git checkout forkversion`  
-`$ git push forkversion master`
+`$ git push forkversion master`  
 
 `$ git checkout -b mywork origin`  
 `git fetch`  
@@ -36,5 +37,14 @@ Sync with author after fork
 `$ git branch --set-upstream-to=upstream/foo foo`  
 `$ git branch -m oldname newname`  
 
+`$ git tag -a v1.0.2 -m "my version 1.0.2"`  
+`$ git tag`  
+`$ git tag -l "v1.0.2*"`  
+`$ git show v1.0.2`  
+`$ git log --pretty=oneline`  
+`$ git tag -a v1.0.1 9fceb02`  
+`$ git push origin v1.0.1`  
+`$ git push origin --tags`  
+`$ git checkout -b version1 v1.0.1`  
 
 ### Linux
