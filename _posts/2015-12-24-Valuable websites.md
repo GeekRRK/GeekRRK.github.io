@@ -25,15 +25,14 @@ title: Valuable websites
 # Guide
 [The Swift Programming Language](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)  
 [Start Developing iOS Apps (Swift)](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html)  
-[Material Design](https://www.google.com/design/spec/material-design/introduction.html)  
-[Material icons](https://design.google.com/icons/)  
-[Font Awesome](https://fortawesome.github.io/Font-Awesome/)  
-
 [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/index.html)  
 [GitHubGuides](https://guides.github.com)  
 [GitHubPages](https://pages.github.com)  
 [Jekyll](https://jekyllrb.com)  
 [Liquid](http://liquidmarkup.org)  
+[Material Design](https://www.google.com/design/spec/material-design/introduction.html)  
+[Material icons](https://design.google.com/icons/)  
+[Font Awesome](https://fortawesome.github.io/Font-Awesome/)  
 
 # ThirdParty
 [PGYER](http://www.pgyer.com)  
