@@ -16,7 +16,7 @@ title: Frequent commands
 `$ pod spec create [NAME|https://github.com/USER/REPO]`  
 
 ### Git
-Sync with author after fork
+Sync with author after fork  
 `$ git clone -o forkversion https://github.com/geekrrk/test.git`  
 `$ git remote add originalversion https://github.com/originalauthor/test.git`  
 `$ git remote -v`  
@@ -29,7 +29,7 @@ Sync with author after fork
 `$ git push forkversion master`  
 
 `$ git checkout -b mywork origin`  
-`git fetch`  
+`$ git fetch`  
 `$ git rebase origin`  
 `$ git merge origin`  
 
