@@ -141,11 +141,47 @@ text-decoration:none;
   border:1px
   solid #999;
   position:fixed;
-  left:0;
-  top:200;
+  left:10px;
+  top:140px;
   border-bottom-color:#333;
   border-right-color:#333;
   margin:10px;
+}
+
+//GitHub button
+.rGitHubBtn{
+  width:100px;
+  height:25px;
+  text-align:center;
+  font-size:small;
+  line-height:25px;
+  border:1px
+  solid #999;
+  position:fixed;
+  left:140px;
+  top:30px;
+  border-bottom-color:#333;
+  border-right-color:#333;
+  margin:5px;
+  cursor:pointer;
+}
+
+//Blog button
+.rBlogBtn{
+  width:100px;
+  height:25px;
+  text-align:center;
+  font-size:small;
+  line-height:25px;
+  border:1px
+  solid #999;
+  position:fixed;
+  left:140px;
+  top:60px;
+  border-bottom-color:#333;
+  border-right-color:#333;
+  margin:5px;
+  cursor:pointer;
 }
 
 /**
