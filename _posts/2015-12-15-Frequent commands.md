@@ -27,6 +27,7 @@ Sync with author after fork
 `$ git pull`  
 `$ git checkout forkversion`  
 `$ git push forkversion master`  
+`$ git status`  
 
 `$ git checkout -b mywork origin`  
 `$ git fetch`  
