@@ -49,3 +49,32 @@ Sync with author after fork
 `$ git checkout -b version1 v1.0.1`  
 
 ### Linux
+`$ find . -name “*.html” |xargs grep "hello world"`  
+`$ grep ‘GitHub’ Valuable websites.md`  
+`$ find ./ -size 0 | xargs rm -f &`  
+`$ grep 'test' d*`  
+`$ grep 'test' aa bb cc`  
+`$ grep '[a-z]\{5\}' aa`  
+
+`$ tar -czf test.tar.gz /test1 /test2`  
+`$ tar -tzf test.tar.gz`  
+`$ tar -xvzf test.tar.gz`  
+
+`$ head -n 10 example.txt`  
+`$ tail -n 10 example.txt`  
+`$ tail -f exmaple.log`  
+
+`$ netstat -tln | grep 8080`  
+`$ lsof -i :8080`  
+`$ ps –ef|grep tomcat`  
+`$ ps aux|grep java`  
+
+`$ tree a`  
+`$ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"`  
+`$ source ~/.profile`  
+
+`$ wget http://file.tgz`  
+`$ curl http://file.tgz`  
+
+`$ ssh userName@ip`  
+`$ scp sourecFile romoteUserName@remoteIp:remoteAddr`  
