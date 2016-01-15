@@ -50,6 +50,7 @@ title: Valuable websites
 [Privnote](https://privnote.com)  
 [Mou](http://25.io)  
 [PicGIF Lite](https://itunes.apple.com/us/app/picgif-lite/id844918735?mt=12)   
+[Drop to GIF](https://github.com/mortenjust/droptogif/releases)  
 [Atom](https://atom.io)  
 [Sketch](http://www.sketchapp.com)  
 [Lantern](https://getlantern.org)  
