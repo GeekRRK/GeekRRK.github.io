@@ -48,6 +48,8 @@ Sync with author after fork
 `$ git push origin --tags`  
 `$ git checkout -b version1 v1.0.1`  
 
+`$ git clone -b <branch> <remote_repo>`  
+
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
 `$ grep ‘GitHub’ Valuable websites.md`  
