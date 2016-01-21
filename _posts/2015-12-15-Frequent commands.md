@@ -49,6 +49,7 @@ Sync with author after fork
 `$ git checkout -b version1 v1.0.1`  
 
 `$ git clone -b <branch> <remote_repo>`  
+`$ git branch -d[D] testing`  
 
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
