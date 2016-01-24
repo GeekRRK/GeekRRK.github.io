@@ -82,6 +82,7 @@ Sync with author after fork
 `$ ssh userName@ip`  
 `$ scp sourecFile romoteUserName@remoteIp:remoteAddr`  
 
+The following iptables related commands refer to: <http://blog.csdn.net/cssmhyl/article/details/7966789>  
 `$ iptables -P INPUT DROP`  
 `$ iptables -P FORWARD DROP`  
 `$ iptables -P OUTPUT DROP`  
