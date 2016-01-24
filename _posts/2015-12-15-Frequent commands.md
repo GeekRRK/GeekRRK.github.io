@@ -81,3 +81,30 @@ Sync with author after fork
 
 `$ ssh userName@ip`  
 `$ scp sourecFile romoteUserName@remoteIp:remoteAddr`  
+
+`$ iptables -P INPUT DROP`  
+`$ iptables -P FORWARD DROP`  
+`$ iptables -P OUTPUT DROP`  
+`$ iptables -L -n`  
+`$ service iptables save`  
+`$ vim /etc/sysconfig/iptables`  
+`$ iptables -A INPUT -p tcp --dport 22 -j ACCEPT`  
+`$ iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT`  
+`$ iptables -A INPUT -p tcp -s 192.168.1.104 -j DROP`  
+`$ iptables -L -n --line-number`  
+`$ iptables -D INPUT 2`  
+`$ iptables -A OUTPUT -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT`  
+`$ iptables -A OUTPUT -p tcp --sport 80 -m state --state ESTABLISHED -j ACCEPT`  
+`$ grep domain /etc/services`  
+`$ iptables -A OUTPUT -p udp --dport 53 -j ACCEPT`  
+`$ iptables -A INPUT -p udp --sport 53 -j ACCEPT`  
+`$ iptables -A INPUT -p udp --dport 53 -j ACCEPT`  
+`$ iptables -A OUTPUT -p udp --sport 53 -j ACCEPT`  
+`$ iptables -A INPUT -p tcp --dport 21 -j ACCEPT`  
+`$ iptables -A INPUT -p tcp --dport 20 -j ACCEPT`  
+`$ iptables -A OUTPUT -p tcp --sport 21 -j ACCEPT`  
+`$ iptables -A OUTPUT -p tcp --sport 20 -j ACCEPT`  
+`pasv_min_port=30001`  
+`pasv_max_port=31000`  
+`$ iptables -A INPUT -p tcp --dport 30001:31000 -j ACCEPT`  
+`$ iptables -A OUTPUT -p tcp --sport 30001:31000 -j ACCEPT`  
