@@ -227,4 +227,8 @@ When finish this blog, we might wonder that can we use this tech as dynamic
 plugin and bypass the review of AppStore. People say it won't work because
 *_CodeSignature* or something else. And Apple Inc. only allow the *lua*
 to update App dynamically. See this site: <http://www.cocoachina.com/bbs/read.php?tid=129723>  
-This is my project: <https://github.com/GeekRRK/DyLoadFramework>
+Learn more about lua:  
+<http://blog.csdn.net/wildfireli/article/details/19057809>  
+<http://devshen.github.io/2015/01/30/Use_Lua_in_iOS/>  
+<http://blog.jobbole.com/70480/>  
+This is my project using framework: <https://github.com/GeekRRK/DyLoadFramework>
