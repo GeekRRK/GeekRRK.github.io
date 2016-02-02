@@ -4,6 +4,7 @@ title: Static Library
 ---
 
 <h1 class="post-center-title">Create a new Library</h1>
+
 ### 0. Create a new project
 ![Choose template]({{site.baseurl}}/assets/static_library/choose_template.png)  
 Create a new project named *Print*

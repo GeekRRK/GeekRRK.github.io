@@ -3,23 +3,23 @@ layout: post
 title: Blog with Jekyll
 ---
 
-###0. Installing Jekyll
+### 0. Installing Jekyll
 `$ ruby --version` If the command not found, install ruby.  
 `$ sudo gem install bundler`
 
-###1. Setting up Jekyll
+### 1. Setting up Jekyll
 `$ jekyll new Blog`  
 `$ cd Blog`  
 `$ git init`  
 `$ vim Gemfile` Add *gem 'github-pages'* to it.  
 `$ bundle install`
 
-###2. Running Jekyll
+### 2. Running Jekyll
 `$ bundle exec jekyll build`  
 `$ bundle exec jekyll serve`  
 Fire up a browser and go to <http://localhost:4000>  
 
-###3. Pushing to GitHub
+### 3. Pushing to GitHub
 `$ vim _config.yml` Modify *baseurl: /Blog*.  
 `$ git checkout --orphan gh-pages`  
 `$ git remote add origin https://github.com/GeekRRK/Blog.git`  
@@ -28,7 +28,7 @@ Fire up a browser and go to <http://localhost:4000>
 `$ git push origin gh-pages`  
 Fire up a browser and go to <http://GeekRRK.github.io/Blog>
 
-###4. Adding comments
+### 4. Adding comments
 Register *http://GeekRRK.github.io* on <http://disqus.com>
 and get the shortname *geekrrk*.  
 `$ vim _config.yml` Add *disqusname: geekrrk* to it.  

@@ -9,7 +9,7 @@ Get the latest version, for example, openssl-1.0.2e.
 
 ### 1. Modify ui_openssl.c
 Replace *static volatile sig_atomic_t intr_signal;* with
-*static volatile int intr_signal;** in **crypto/ui/ui_openssl.c*
+*static volatile int intr_signal;* in *crypto/ui/ui_openssl.c*
 for preventing building error.  
 
 ### 2. Execute configure
