@@ -20,8 +20,7 @@ title: Blog with Jekyll
 Fire up a browser and go to <http://localhost:4000>  
 
 ###3. Pushing to GitHub
-`$ vim _config.yml` Comment *markdown: kramdown* then add *markdown: redcarpet*
-to it and modify *baseurl: /Blog*.  
+`$ vim _config.yml` Modify *baseurl: /Blog*.  
 `$ git checkout --orphan gh-pages`  
 `$ git remote add origin https://github.com/GeekRRK/Blog.git`  
 `$ git add .`  
