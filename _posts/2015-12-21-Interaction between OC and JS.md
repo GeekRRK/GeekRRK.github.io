@@ -6,7 +6,8 @@ title: Interaction between OC and JS
 **Remember url ignores case**
 
 ### 0. The html page
-```html
+
+{% highlight html %}
 <html>
 <head>
     <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Type"
@@ -28,10 +29,11 @@ title: Interaction between OC and JS
     <a href="http://m.baidu.com">Inject JS into the html of baidu.</a>
 </body>
 </html>
-```
+{% endhighlight %}
 
 ### 1. Setup index.html
-```objective-c
+
+{% highlight objective-c %}
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -61,10 +63,11 @@ title: Interaction between OC and JS
 
     self.webView.delegate = self;
 }
-```
+{% endhighlight %}
 
 ### 2. Invoke JS from OC or inject JS into html
-```objective-c
+
+{% highlight objective-c %}
 - (void)injectJSintoBaidu {
 	[self.webView
    stringByEvaluatingJavaScriptFromString:
@@ -87,10 +90,11 @@ title: Interaction between OC and JS
     //Inject JS into Baidu
     [self injectJSintoBaidu];
 }
-```
+{% endhighlight %}
 
 ### 3. Invoke OC from html（Response the invocation from hyperlinks）
-```objective-c
+
+{% highlight objective-c %}
 //YES if the web view should begin loading content; otherwise, NO.
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
@@ -124,5 +128,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 	[self.webView loadRequest:request];
 }
-```
+{% endhighlight %}
+
 Refer to: <http://blog.csdn.net/xn4545945/article/details/36487407>

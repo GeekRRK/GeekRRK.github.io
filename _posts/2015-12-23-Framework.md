@@ -4,6 +4,7 @@ title: Framework
 ---
 
 <h1 class="post-center-title">Dynamic Framework</h1>
+
 ### 0. Create a Cocoa Touch Framework
 ![Cocoa Touch Framework]({{site.baseurl}}/assets/framework/cocoatouch_framework.png)  
 Write some class and put their headers into the header of framework while must
@@ -65,6 +66,7 @@ that doesn't exist in Xcode5-.
 Refer to: <http://www.cnblogs.com/zhw511006/p/4155930.html>  
 
 <h1 class="post-center-title">Use framework dynamically</h1>
+
 ### 0. Set Build Phases
 Put the framework into the following zones.  
 Targets -> Build Phases -> Link Binary With Libraries  
@@ -186,6 +188,7 @@ static void image_removed(const struct mach_header *mh, intptr_t slide)
 Refer to: <http://foggry.com/blog/2014/06/12/wwdc2014zhi-iosshi-yong-dong-tai-ku/>
 
 <h1 class="post-center-title">Package resources into framework</h1>
+
 ### 0. Drag xib and image to *Copy Bundle Resources* of framework project.
 Remember to drag them to *Embedded Binaries* if the framework is dynamic.  
 ![Copy Bundle Resources]({{site.baseurl}}/assets/framework/copybundle.png)  
