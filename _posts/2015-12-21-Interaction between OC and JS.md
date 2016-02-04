@@ -67,7 +67,7 @@ title: Interaction between OC and JS
 
 ### 2. Invoke JS from OC or inject JS into html
 
-{% highlight  %}
+{% highlight objc %}
 - (void)injectJSintoBaidu {
 	[self.webView
    stringByEvaluatingJavaScriptFromString:
