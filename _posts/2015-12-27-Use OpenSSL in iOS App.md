@@ -37,7 +37,7 @@ Drag the two *.a* files and *include* directory into project.
 Set *Always Search User Paths* to *YES* and *User Header Search Paths* to
 *$(SRCROOT)/include*  
 Add the following code to our code and build run.  
-{% highlight objective-c %}
+{% highlight objc %}
 #include <openssl/md5.h>
 
 void Md5( NSString * string){

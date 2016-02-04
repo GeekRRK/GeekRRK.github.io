@@ -85,7 +85,7 @@ If don't want to load the framework when the App launches, we can set the
 ### 1. Load the framework
 Use *dlopen* to load the framework, the real executable code is
  *MyFramework.framework/MyFramework*, so don't forget *MyFramework*.
-{% highlight objective-c %}
+{% highlight objc %}
 #import <dlfcn.h>
 #import <mach-o/dyld.h>
 
@@ -126,7 +126,7 @@ NSString *docDir = [paths objectAtIndex:0];
 
 Use *NSBundle* to load the framework, this time we should forget *MyFramework*,
 just use *MyFramework.framework* as the path.
-{% highlight objective-c %}
+{% highlight objc %}
 - (IBAction)onBundleLoadAtPathAction:(id)sender
 {
     [self bundleLoadDylibWithPath:BUNDLEPATH_NSBUNDLE];
@@ -145,7 +145,7 @@ just use *MyFramework.framework* as the path.
 {% endhighlight %}
 
 ### 2. Invoke the method of the framework  
-{% highlight objective-c %}
+{% highlight objc %}
 - (IBAction)onTriggerButtonAction:(id)sender
 {
     Class rootClass = NSClassFromString(@"MyUtil");
@@ -167,7 +167,7 @@ just use *MyFramework.framework* as the path.
 
 ### 3. Monitoring the adding and removing of frameworks
 We can register the callback for the adding or removing of the framework.  
-{% highlight objective-c %}
+{% highlight objc %}
 static void image_added(const struct mach_header *mh, intptr_t slide)
 {
     NSLog(@"add");
@@ -198,7 +198,7 @@ We can find the xib and image in the directory of framework
 ![Directory of framework]({{site.baseurl}}/assets/framework/framework_directory.png)  
 
 ### 2. Load the xib and image from main bundle
-{% highlight objective-c %}
+{% highlight objc %}
 [[NSBundle mainBundle]
 loadNibNamed:@"MyFramework.framework/View"
        owner:nil
@@ -212,7 +212,7 @@ loadNibNamed:@"MyFramework.framework/View"
 Create a directory and put the image into it then name the direcotry as
  *myBundle.bundle*. Drag the bundle to our project.  
 
-{% highlight objective-c %}
+{% highlight objc %}
 + (NSString *)pathForResource:(NSString *)name ofType:(NSString *)type {
     NSBundle *myBundle = [NSBundle
       bundleWithPath:[[NSBundle mainBundle]

@@ -5,7 +5,7 @@ title: URL Scheme
 
 ### 0. Return App when finish the tel calling
 
-{% highlight objective-c %}
+{% highlight objc %}
 //Legal for AppStore
 - (void) dialPhoneNumber:(NSString *)aPhoneNumber
 {
@@ -25,7 +25,7 @@ openURL:[NSURL URLWithString:@"telprompt://10086"]];
 
 ### 2. Overide handler
 
-{% highlight objective-c %}
+{% highlight objc %}
 //Priority is lower than below method
 -(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
@@ -54,7 +54,7 @@ openURL:[NSURL URLWithString:@"telprompt://10086"]];
 
 ### 3. Invoke from another App
 
-{% highlight objective-c %}
+{% highlight objc %}
 [[UIApplication sharedApplication]
 openURL:[NSURL URLWithString:@"Al://method?param=ios"]];
 {% endhighlight %}  

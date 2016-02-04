@@ -67,7 +67,7 @@ title: Interaction between OC and JS
 
 ### 2. Invoke JS from OC or inject JS into html
 
-{% highlight objective-c %}
+{% highlight  %}
 - (void)injectJSintoBaidu {
 	[self.webView
    stringByEvaluatingJavaScriptFromString:
@@ -94,7 +94,7 @@ title: Interaction between OC and JS
 
 ### 3. Invoke OC from html（Response the invocation from hyperlinks）
 
-{% highlight objective-c %}
+{% highlight objc %}
 //YES if the web view should begin loading content; otherwise, NO.
 - (BOOL)webView:(UIWebView *)webView
 shouldStartLoadWithRequest:(NSURLRequest *)request
