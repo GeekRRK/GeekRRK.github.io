@@ -33,7 +33,7 @@ title: Interaction between OC and JS
 
 ### 1. Setup index.html
 
-{% highlight objective-c %}
+{% highlight objc %}
 - (void)viewDidLoad {
     [super viewDidLoad];
 

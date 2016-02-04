@@ -18,5 +18,3 @@ github_username:  GeekRRK
 # Build settings
 markdown: kramdown
 disqusname: geekrrk
-kramdown:
-  syntax_highlighter: rouge
