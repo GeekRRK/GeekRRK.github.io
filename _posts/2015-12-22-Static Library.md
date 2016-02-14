@@ -45,6 +45,7 @@ invoke the method existing in it.
 Refer to: <http://blog.csdn.net/pjk1129/article/details/7255163>
 
 <h1 class="post-center-title">Create a Library based an existing project</h1>
+
 ### 0. Create a static library target
 File -> New -> Target -> Cocoa Touch Static Library  
 ![Target]({{site.baseurl}}/assets/static_library/target.png)  
@@ -61,6 +62,7 @@ Choose *TestPrintLib* and do the same things as
 the step 3, 4, 5 we wrote in **Create a new Library**.
 
 <h1 class="post-center-title">About Architecture</h1>
+
 ### All kinds of Architecture
 * armv6
  * iPhone
@@ -92,12 +94,10 @@ The workaround is to use the -all_load or -force_load flags.
  Each -force_load option must be followed by a path to an archive,
  and every object file in that archive will be loaded.
 
-### If delete this line, the following font of text will become big.
 * If we only use libs, like *BMKMapView* in xib,
 didn't use them in code, the compiler won't link them,
 so we should set *Other Linker Flags* to *-ObjC*.  
-Refer to:  
-<http://leenjewel.github.io/blog/2015/01/08/ios-ping-tai-cocos2d-x-xiang-mu-jie-ru-xin-lang-wei-bo-sdk-de-keng/>
+Refer to: <http://leenjewel.github.io/blog/2015/01/08/ios-ping-tai-cocos2d-x-xiang-mu-jie-ru-xin-lang-wei-bo-sdk-de-keng/>
 
 * If the conflicting structure of architecture is same in each lib,
 we can consider splitting the libs then combine them.  

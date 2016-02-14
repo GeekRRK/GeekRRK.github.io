@@ -48,7 +48,7 @@ The core responsibilities of a scrum master include (but are not limited to):
 ![Task Board]({{site.baseurl}}/assets/agile/taskboard.png)  
 ![Plan Card]({{site.baseurl}}/assets/agile/plancard.png)  
 
-Learn more:  
+Learn more:  <br />
 <http://www.cnblogs.com/taven/archive/2010/10/17/1853386.html>  
 <http://www.scrumcn.com/agile/scrum-knowledge-library/scrum.html#tab-id-1>  
 <http://www.cnblogs.com/stay/archive/2011/08/23/2151329.html>  

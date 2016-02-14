@@ -20,7 +20,7 @@ title: Blog with Jekyll
 Fire up a browser and go to <http://localhost:4000>  
 
 ### 3. Pushing to GitHub
-`$ vim _config.yml` Modify *baseurl: /Blog*.  
+`$ vim _config.yml` Modify *baseurl: "" to baseurl: /Blog*.  
 `$ git checkout --orphan gh-pages`  
 `$ git remote add origin https://github.com/GeekRRK/Blog.git`  
 `$ git add .`  
@@ -66,6 +66,6 @@ after *{% raw %}{{ content }}{% endraw %}*
 Fire up a browser and go to <http://GeekRRK.github.io/Blog>.
 If the comments don't appear, refresh the website after a few minutes.  
 
-Learn more:  
+Learn more:  <br />
 <http://www.aips.me/github-pages-build-blog.html#toc-21>  
 <http://blog.csdn.net/on_1y/article/details/19259435>
