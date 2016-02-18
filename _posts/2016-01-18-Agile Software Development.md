@@ -14,10 +14,11 @@ Agile Software Development is a guiding ideology. Scrum and XP is the concrete m
 
 > #### Product owner
 >The product owner represents the stakeholders and is the voice of the customer, who is accountable for ensuring that the team delivers value to the business. The product owner writes (or has the team write) customer-centric items (typically user stories), ranks and prioritizes them, and adds them to the product backlog. Scrum teams should have one product owner, this role should not be combined with that of the scrum master. The product owner should be on the business side of the project, and should never interfere or interact with team members on the technical aspects of the development task. This role is equivalent to the customer representative role in some other agile frameworks.
-Role in requirements communication
+Role in requirements communication  
 Communication is a main function of the product owner. The ability to convey priorities and empathize with team members and stakeholders is vital to steer the project in the right direction. Product owners bridge the communication gap between the team and its stakeholders. As Figure 1 shows, they serve as a proxy stakeholder to the development team and as a project team representative to the overall stakeholder community.
 As the face of the team to the stakeholders, the following are some of the communication tasks of the product owner to the stakeholders:
-* demonstrates the solution to key stakeholders who were not present at a sprint review;
+
+> * demonstrates the solution to key stakeholders who were not present at a sprint review;
 * defines and announces releases;
 * communicates team status;
 * organizes milestone reviews;
@@ -33,8 +34,9 @@ A product owner’s ability to communicate effectively is also enhanced by being
 
 > #### Scrum master
 > Scrum is facilitated by a scrum master, who is accountable for removing impediments to the ability of the team to deliver the product goals and deliverables. The scrum master is not a traditional team lead or project manager, but acts as a buffer between the team and any distracting influences. The scrum master ensures that the scrum process is used as intended. The scrum master helps ensure the team follows the agreed scrum processes, often facilitates key sessions, and encourages the team to improve. The role has also been referred to as a team facilitator or servant-leader to reinforce these dual perspectives.
-The core responsibilities of a scrum master include (but are not limited to):  
-* Helping the product owner maintain the product backlog in a way that ensures the needed work is well understood so the team can continually make forward progress
+The core responsibilities of a scrum master include (but are not limited to):
+
+> * Helping the product owner maintain the product backlog in a way that ensures the needed work is well understood so the team can continually make forward progress
 * Helping the team to determine the definition of done for the product, with input from key stakeholders
 * Coaching the team, within the scrum principles, in order to deliver high-quality features for its product
 * Promoting self-organization within the team
