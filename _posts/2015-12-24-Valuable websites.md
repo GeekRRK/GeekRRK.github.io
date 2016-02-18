@@ -13,6 +13,7 @@ title: Valuable websites
 [Code4App](http://code4app.com)  
 [Git@OSC](https://git.oschina.net)  
 [PCbeta](http://bbs.pcbeta.com)  
+[WordPress](https://wordpress.com)  
 [jianshu](http://www.jianshu.com)  
 
 # Official Website
