@@ -51,6 +51,14 @@ Sync with author after fork
 `$ git clone -b <branch> <remote_repo>`  
 `$ git branch -d[D] testing`  
 
+`$ git fetch origin develop:develop`  
+`$ git fetch origin coderA:coderA`  
+`$ git checkout develop`  
+`$ git pull`  
+`$ git diff coderA`  
+`$ git merge coderA`  
+`$ git push`  
+
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
 `$ grep ‘GitHub’ Valuable websites.md`  
