@@ -15,6 +15,7 @@ title: Valuable websites
 [PCbeta](http://bbs.pcbeta.com)  
 [WordPress](https://wordpress.com)  
 [jianshu](http://www.jianshu.com)  
+[cnblogs](http://www.cnblogs.com)  
 
 # Official Website
 [Apple News and Updates](https://developer.apple.com/news)  
