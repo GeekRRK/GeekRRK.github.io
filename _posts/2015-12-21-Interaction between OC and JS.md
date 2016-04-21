@@ -131,7 +131,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 {% endhighlight %}
 
 ### 4. Use JSContext to invoke the method of OC
-Import <JavaScriptCore/JavaScriptCore.h>  and write the following code:
+Import <JavaScriptCore/JavaScriptCore.h> and write the following code:
 {% highlight objc %}
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
