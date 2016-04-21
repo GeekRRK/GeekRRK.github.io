@@ -130,4 +130,25 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 }
 {% endhighlight %}
 
+### 4. Use JSContext to invoke the method of OC
+Import <JavaScriptCore/JavaScriptCore.h>  and write the following code:
+{% highlight objc %}
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    JSContext *context = [self.webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+
+    context[@"callAPP"] = ^() {
+        NSLog(@"+++++++Begin Log+++++++");
+        NSArray *args = [JSContext currentArguments];
+
+        for (JSValue *jsVal in args) {
+            NSLog(@"%@", jsVal);
+        }
+
+        JSValue *this = [JSContext currentThis];
+        NSLog(@"this: %@",this);
+        NSLog(@"-------End Log-------");
+    };
+}
+{% endhighlight %}
+
 Refer to: <http://blog.csdn.net/xn4545945/article/details/36487407>
