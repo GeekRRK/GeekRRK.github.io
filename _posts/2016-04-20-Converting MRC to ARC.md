@@ -14,3 +14,5 @@ title: Converting MRC to ARC
 3、 Fix all ARC readiness issues and remember to clean the project or change another simulator when meet the prompt 'lipo can't figure out the architecture type of...'.
 
 4、 Repeat the step 2 until success then follow the guide.
+
+5、 Redo the step 0.
