@@ -9,8 +9,8 @@ title: Converting MRC to ARC
 
 1、 **Preferences -> General**: Check *Continue building after errors*.
 
-2、 Solve the issues in our own code according to the suggestions of Xcode.
+2、 **Edit -> Convert -> To Objective-C ARC...**: Select the target to be converting and click **Check** then Xcode will prompt 'Xcode found many issues that prevents conversion from proceeding. Fix all ARC readiness issues and try again.'.
 
-3、 **Edit -> Convert -> To Objective-C ARC...**: Select the target to be converting and click **Check**.
+3、 Fix all ARC readiness issues and remember to clean the project or change another simulator when meet the prompt 'lipo can't figure out the architecture type of...'.
 
-4、 Review automatic changes and click **Save**.
+4、 Repeat the step 2 until success then follow the guide.
