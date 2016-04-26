@@ -15,4 +15,6 @@ title: Converting MRC to ARC
 
 4、 Repeat the step 2 until success then follow the guide.
 
-5、 Redo the step 0.
+5、 Redo the step 0 and delete some 'release' sentences manually.
+
+6、 Run the App and test it really really carefully because some tricky code maybe rely on the feature of MRC.
