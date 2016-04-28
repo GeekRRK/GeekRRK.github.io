@@ -58,6 +58,7 @@ title: Valuable websites
 [Sketch](http://www.sketchapp.com)  
 [Lantern](https://getlantern.org)  
 [Alfred](https://www.alfredapp.com)  
+[TinyPNG](https://tinypng.com)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
