@@ -14,11 +14,11 @@ title: Converting MRC to ARC
 2、 **Edit -> Convert -> To Objective-C ARC...**: Select the target to be converting and click **Check** then Xcode will prompt 'Xcode found many issues that prevents conversion from proceeding. Fix all ARC readiness issues and try again.'.  
 ![Convert2ARC]({{site.baseurl}}/assets/convert2arc/convert2arc.png)  
 ![Prompt many readiness issues]({{site.baseurl}}/assets/convert2arc/readiness_issues.png)  
+
+3、 Fix all ARC readiness issues and run. Redo the step 0 and delete some 'release' code manually when meet some errors like 'ARC forbids explicit message send of ...'.  
 ![Prompt start 2 convert]({{site.baseurl}}/assets/convert2arc/start2convert_prompt.png)  
 ![Generating preview]({{site.baseurl}}/assets/convert2arc/generating_preview.png)  
 ![Save]({{site.baseurl}}/assets/convert2arc/save.png)  
-
-3、 Fix all ARC readiness issues and run. Redo the step 0 and delete some 'release' code manually when meet some errors like 'ARC forbids explicit message send of ...'.  
 
 4、Remember to clean the project or change another simulator when meet the prompt 'lipo can't figure out the architecture type of...'.  
 
