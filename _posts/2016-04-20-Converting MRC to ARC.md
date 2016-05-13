@@ -8,7 +8,7 @@ title: Converting MRC to ARC
 0、 If there are a lot of third party code using MRC like ASI or JSONKit, just put *-fno-objc-arc* to them.  
 ![Put -fno-objc-arc to third party MRC code]({{site.baseurl}}/assets/convert2arc/asi_fno_objc_arc.png)  
 
-1、 **Preferences -> General**: Check *Continue building after errors*.  
+1、 **Preferences -> General**: Check *Continue building after errors* to reveal all errors.  
 ![Continue build after errors]({{site.baseurl}}/assets/convert2arc/continue_error.png)  
 
 2、 **Edit -> Convert -> To Objective-C ARC...**: Select the target to be converting and click **Check** then Xcode will prompt 'Xcode found many issues that prevents conversion from proceeding. Fix all ARC readiness issues and try again.'  
