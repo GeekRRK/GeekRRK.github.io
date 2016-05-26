@@ -58,6 +58,9 @@ Sync with author after fork
 `$ git diff coderA`  
 `$ git merge coderA`  
 `$ git push`  
+`$ git reset [--hard]`  
+`$ git revert`  
+`$ git reflog`  
 
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
