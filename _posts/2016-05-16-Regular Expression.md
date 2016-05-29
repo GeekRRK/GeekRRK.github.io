@@ -61,3 +61,6 @@ title: Regular Expression
      }
  }
  {% endhighlight %}
+
+Refer to: <http://www.admin10000.com/document/5944.html>  
+Learn more: <http://www.cocoachina.com/programmer/20160513/16243.html>
