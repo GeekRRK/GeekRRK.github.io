@@ -25,3 +25,5 @@ title: Converting MRC to ARC
 5、Remember to clean the project or change another simulator when meet the prompt 'lipo can't figure out the architecture type of...'.  
 
 6、 Run the App and test it really really carefully because some tricky code may rely on the feature of MRC.  
+
+Refer to: <https://objectpartners.com/2013/07/17/converting-an-ios-project-to-use-arc-automatic-reference-counting/>
