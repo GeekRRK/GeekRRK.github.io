@@ -59,6 +59,7 @@ title: Valuable websites
 [Lantern](https://getlantern.org)  
 [Alfred](https://www.alfredapp.com)  
 [TinyPNG](https://tinypng.com)  
+[Regex101](https://regex101.com)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
