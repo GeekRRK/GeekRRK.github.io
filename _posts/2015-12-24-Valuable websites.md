@@ -46,7 +46,9 @@ title: Valuable websites
 [Umeng](http://www.umeng.com)  
 [RongCloud](http://rongcloud.cn)  
 [JPush](https://www.jpush.cn)  
-[Disqus](https://disqus.com)    
+[Disqus](https://disqus.com)  
+[SUI](http://m.sui.taobao.org)  
+[WeX5](http://www.wex5.com)  
 
 # Tool
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  
