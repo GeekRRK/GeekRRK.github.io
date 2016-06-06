@@ -10,3 +10,4 @@ title: Xcode Plugins
 * RTImageAssets
 * VVDocumenter-Xcode
 * XcodeBoost
+* Hardware IO Tools
