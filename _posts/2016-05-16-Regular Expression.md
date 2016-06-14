@@ -3,6 +3,8 @@ layout: post
 title: Regular Expression
 ---
 
+> In theoretical computer science and formal language theory, a regular expression (sometimes called a rational expression) is a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations. The concept arose in the 1950s, when the American mathematician Stephen Kleene formalized the description of a regular language, and came into common use with the Unix text processing utilities ed, an editor, and grep, a filter.
+
  "^one"  
  "a dog$"  
  "^apple$"  
@@ -46,7 +48,7 @@ title: Regular Expression
      [super viewDidLoad];
 
      NSString *searchText = @"you want to match";
-     
+
      NSString *searchText = @"rangeOfString";
      NSRange range = [searchText rangeOfString:@"^[0-9]+$" options:NSRegularExpressionSearch];
      if (range.location != NSNotFound) {
