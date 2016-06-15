@@ -152,5 +152,5 @@ Import <JavaScriptCore/JavaScriptCore.h> and write the following code:
 {% endhighlight %}
 
 Refer to: <http://blog.csdn.net/xn4545945/article/details/36487407>  
-Here are some solutions for problems occur possibly:   <http://stackoverflow.com/questions/23833840/why-cant-i-close-or-dismiss-a-javascript-alert-in-uiwebview><br \><br \>
+Here are some solutions for problems occur possibly:   <http://stackoverflow.com/questions/23833840/why-cant-i-close-or-dismiss-a-javascript-alert-in-uiwebview>  
 <http://stackoverflow.com/questions/19531701/deadlock-with-gcd-and-webview>
