@@ -6,11 +6,13 @@ title: Frequent commands
 ### CocoaPods
 `$ pod install --verbose --no-repo-update`  
 `$ pod update --verbose --no-repo-update`  
+`$ pod setup`  
 `$ gem sources --remove https://rubygems.org/`  
 `$ gem sources -a http://ruby.taobao.org/`  
 `$ gem sources -l`  
 `$ sudo gem update --system`  
 `$ sudo gem install cocoapods`  
+`$ sudo gem install -n /usr/local/bin cocoapods`  
 `$ rvm use ruby-1.9.3-p448`  
 `$ pod search AFNetworking`  
 `$ pod spec create [NAME|https://github.com/USER/REPO]`  
