@@ -16,6 +16,8 @@ title: Valuable websites
 [WordPress](https://wordpress.com)  
 [jianshu](http://www.jianshu.com)  
 [cnblogs](http://www.cnblogs.com)  
+[Google+](https://plus.google.com)  
+[Reddit](https://www.reddit.com)  
 
 # Official Website
 [Apple News and Updates](https://developer.apple.com/news)  
@@ -63,6 +65,7 @@ title: Valuable websites
 [TinyPNG](https://tinypng.com)  
 [Regex101](https://regex101.com)  
 [iStat Menus](https://bjango.com/mac/istatmenus)  
+[WiX](http://www.wix.com/)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
