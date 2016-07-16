@@ -95,6 +95,14 @@ Sync with author after fork
 `$ ssh userName@ip`  
 `$ scp sourecFile romoteUserName@remoteIp:remoteAddr`  
 
+`$ ssh -N -D 7070 root@94.249.184.93`  
+`$ SSH root@94.249.184.93`  
+`$ groupadd internetfreedom`  
+`$ useradd -d /home/freenutsdotcom -m -g internetfreedom -s`    
+`$ /bin/false freenutsdotcom`  
+`$ passwd freenutsdotcom`  
+`$ ssh -N -D 7070 freenutsdotcom@94.249.184.93`  
+
 The following iptables related commands refer to: <http://blog.csdn.net/cssmhyl/article/details/7966789>  
 `$ iptables -P INPUT DROP`  
 `$ iptables -P FORWARD DROP`  
