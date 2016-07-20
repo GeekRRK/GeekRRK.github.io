@@ -65,7 +65,8 @@ title: Valuable websites
 [TinyPNG](https://tinypng.com)  
 [Regex101](https://regex101.com)  
 [iStat Menus](https://bjango.com/mac/istatmenus)  
-[WiX](http://www.wix.com/)  
+[WiX](http://www.wix.com)  
+[Cutterman](http://www.cutterman.cn)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
