@@ -11,3 +11,4 @@ title: Xcode Plugins
 * VVDocumenter-Xcode
 * XcodeBoost
 * Hardware IO Tools
+* FKConsole
