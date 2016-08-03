@@ -64,6 +64,9 @@ Sync with author after fork
 `$ git revert`  
 `$ git reflog`  
 
+`$ git commit --amend`  
+`$ git push --force example-branch`  
+
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
 `$ grep ‘GitHub’ Valuable websites.md`  
