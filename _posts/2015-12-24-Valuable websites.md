@@ -51,6 +51,7 @@ title: Valuable websites
 [Disqus](https://disqus.com)  
 [SUI](http://m.sui.taobao.org)  
 [WeX5](http://www.wex5.com)  
+[Jenkins](https://jenkins.io/)  
 
 # Tool
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  
