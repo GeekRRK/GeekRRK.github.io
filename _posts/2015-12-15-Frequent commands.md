@@ -98,6 +98,9 @@ Sync with author after fork
 `$ ssh userName@ip`  
 `$ scp sourecFile romoteUserName@remoteIp:remoteAddr`  
 
+`$ export http_proxy="http://localhost:port"`  
+`$ export https_proxy="http://localhost:port"`  
+
 `$ ssh -N -D 7070 root@94.249.184.93`  
 `$ SSH root@94.249.184.93`  
 `$ groupadd internetfreedom`  
