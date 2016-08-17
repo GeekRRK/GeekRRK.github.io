@@ -68,6 +68,7 @@ title: Valuable websites
 [iStat Menus](https://bjango.com/mac/istatmenus)  
 [WiX](http://www.wix.com)  
 [Cutterman](http://www.cutterman.cn)  
+[Source Insight](http://www.sourceinsight.com/)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
