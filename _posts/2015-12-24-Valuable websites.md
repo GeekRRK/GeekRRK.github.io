@@ -54,7 +54,6 @@ title: Valuable websites
 
 # Tool
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  
-[W3cBus Tool](http://www.w3cbus.com/tool)   
 [Privnote](https://privnote.com)  
 [Mou](http://25.io)  
 [PicGIF Lite](https://itunes.apple.com/us/app/picgif-lite/id844918735?mt=12)   
