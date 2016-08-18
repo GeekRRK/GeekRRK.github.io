@@ -51,6 +51,7 @@ title: Valuable websites
 [Disqus](https://disqus.com)  
 [SUI](http://m.sui.taobao.org)  
 [WeX5](http://www.wex5.com)  
+[WiX](http://www.wix.com)  
 
 # Tool
 [Markdown Editor](https://www.zybuluo.com/mdeditor)  
@@ -64,7 +65,6 @@ title: Valuable websites
 [TinyPNG](https://tinypng.com)  
 [Regex101](https://regex101.com)  
 [iStat Menus](https://bjango.com/mac/istatmenus)  
-[WiX](http://www.wix.com)  
 [Cutterman](http://www.cutterman.cn)  
 [Jenkins](https://jenkins.io/)  
 [Source Insight](http://www.sourceinsight.com/)  
