@@ -66,6 +66,9 @@ Sync with author after fork
 
 `$ git commit --amend`  
 `$ git push --force example-branch`  
+`$ git branch -d example-branch`  
+`$ git push origin :<branchName>`  
+`$ git push origin --delete <branchName>`  
 
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
