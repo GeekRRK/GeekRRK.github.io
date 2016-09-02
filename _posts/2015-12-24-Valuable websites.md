@@ -68,6 +68,8 @@ title: Valuable websites
 [Cutterman](http://www.cutterman.cn)  
 [Jenkins](https://jenkins.io/)  
 [Source Insight](http://www.sourceinsight.com/)  
+[Tools4noobs](https://www.tools4noobs.com/online_tools)  
+[ToolsOschina](http://tool.oschina.net)  
 
 # Resource
 [WWDC Transcripts](http://asciiwwdc.com)  
