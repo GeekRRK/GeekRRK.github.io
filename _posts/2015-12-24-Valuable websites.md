@@ -26,6 +26,7 @@ title: Valuable websites
 [Apple Member Center](https://developer.apple.com/membercenter)  
 [Apple iTunes Connect](https://itunesconnect.apple.com)  
 [Apple Store China](http://www.apple.com/cn)  
+[Apple Download](https://developer.apple.com/download/more)  
 
 # Guide
 [The Swift Programming Language](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)  
