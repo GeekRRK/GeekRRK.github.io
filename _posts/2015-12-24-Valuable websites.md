@@ -18,6 +18,7 @@ title: Valuable websites
 [cnblogs](http://www.cnblogs.com)  
 [Google+](https://plus.google.com)  
 [Reddit](https://www.reddit.com)  
+[Ray Wenderlich](https://www.raywenderlich.com)  
 
 # Official Website
 [Apple News and Updates](https://developer.apple.com/news)  
