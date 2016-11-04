@@ -42,6 +42,7 @@ title: Valuable websites
 [Material icons](https://design.google.com/icons/)  
 [Font Awesome](https://fortawesome.github.io/Font-Awesome/)  
 [VPN](https://program-think.blogspot.com/2013/01/cross-host-use-gfw-tool.html)  
+[RAC](http://www.jianshu.com/p/87ef6720a096)  
 
 # ThirdParty
 [PGYER](http://www.pgyer.com)  
