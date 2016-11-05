@@ -11,7 +11,7 @@ It seems that changing the name of a project is easy, but it may remain somethin
 1、 Manage Schemes..., choose the scheme, tap return and enter the new name.
 ![Change the scheme name]({{site.baseurl}}/assets/change_project_name/change_scheme_name.png)  
 
-3、Change the target name of Podfile then pod, delete the original libPods-Demo.a in Link Binary with Libraries.
+3、Change the target name of Podfile then pod, delete the original libPods-Demo.a in Link Binary with Libraries and Demo.xcworkspace in root directory.
 
 4、Change the names of some directories and the paths of files if necessary.
 
