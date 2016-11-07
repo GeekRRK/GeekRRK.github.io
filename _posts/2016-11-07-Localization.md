@@ -19,7 +19,7 @@ Add languages under Project->Info->Localizations.
 2、Select the language we want on the alert view to localize InfoPlist.
 ![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_Infoplist.png)  
 
-3、Check all the languages we want on the File inspector.
+3、Check all languages we want on the File inspector.
 ![Localize in the File inspector]({{site.baseurl}}/assets/localization/check_languages.png)  
 
 4、Add localized App name to each InfoPlist.strings.
@@ -30,10 +30,10 @@ Add languages under Project->Info->Localizations.
 0、Steps are same as Localizing App name except the file name is Localizable.strings.
 ![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_strings_in_code.png)  
 
-1、Use NSLocalizedString to assign strings.
+1、Use NSLocalizedString to assign strings.  
 `NSString *title = NSLocalizedString(@"click", nil);`
 
-Tip: Edit->Scheme->Run->Arguments Passed On Launch ->-AppleLanguages (zh-Hans) to change the run language environment. (Won't work for InfoPlist.strings)
+*Tip:* Edit->Scheme->Run->Arguments Passed On Launch ->-AppleLanguages (zh-Hans) to change the run language environment. (Won't work for InfoPlist.strings)
 
 <h1 class="post-center-title">When code in team</h1>
 
