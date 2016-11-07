@@ -6,29 +6,29 @@ title: Localization
 <h1 class="post-center-title">Preparation</h1>
 
 Add languages under Project->Info->Localizations.
-![Add languages]({{site.baseurl}}/assets/Localization/add_languages.png)  
+![Add languages]({{site.baseurl}}/assets/localization/add_languages.png)  
 
 <h1 class="post-center-title">Localize App name</h1>
 
 0、Create InfoPlist.
-![Create InfoPlist]({{site.baseurl}}/assets/Localization/create_infoplist.png)  
+![Create InfoPlist]({{site.baseurl}}/assets/localization/create_infoplist.png)  
 
 1、Select InfoPlist and click Localize... on the File inspector.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/file_inspector_localize.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/file_inspector_localize.png)  
 
 2、Select the language we want on the alert view to localize InfoPlist.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/localize_Infoplist.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_Infoplist.png)  
 
 3、Check all the languages we want on the File inspector.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/check_languages.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/check_languages.png)  
 
 4、Add localized App name to each InfoPlist.strings.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/add_app_name_to_each_infoplist.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/add_app_name_to_each_infoplist.png)  
 
 <h1 class="post-center-title">Localize strings in code</h1>
 
 0、Steps are same as Localizing App name except the file name is Localizable.strings.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/localize_strings_in_code.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_strings_in_code.png)  
 
 1、Use NSLocalizedString to assign strings.
 `NSString *title = NSLocalizedString(@"click", nil);`
@@ -46,8 +46,8 @@ Way 1: Localize image name like previous steps.
 Way 2:
 0、Localize the image on the File inspector.
 1、Show the image in Finder and put another image with the same name to another .lproj directory then drag the image to project under the previous image.
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/localize_image.png)  
-![Localize in the File inspector]({{site.baseurl}}/assets/Localization/localized_images.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_image.png)  
+![Localize in the File inspector]({{site.baseurl}}/assets/localization/localized_images.png)  
 
 <h1 class="post-center-title">View/Switch localized languages</h1>
 
