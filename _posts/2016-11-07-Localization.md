@@ -41,7 +41,8 @@ Tip: Edit->Scheme->Run->Arguments Passed On Launch ->-AppleLanguages (zh-Hans) t
 
 <h1 class="post-center-title">Localize image</h1>
 
-Way 1: Localize image name like previous steps.
+Way 1:  
+Localize image name like previous steps.
 
 Way 2:  
 0、Localize the image on the File inspector.  
