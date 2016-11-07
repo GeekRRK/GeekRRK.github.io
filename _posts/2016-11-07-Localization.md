@@ -44,7 +44,7 @@ Tip: Edit->Scheme->Run->Arguments Passed On Launch ->-AppleLanguages (zh-Hans) t
 Way 1: Localize image name like previous steps.
 
 Way 2:  
-0、Localize the image on the File inspector.
+0、Localize the image on the File inspector.  
 1、Show the image in Finder and put another image with the same name to another .lproj directory then drag the image to project under the previous image.
 ![Localize in the File inspector]({{site.baseurl}}/assets/localization/localize_image.png)  
 ![Localize in the File inspector]({{site.baseurl}}/assets/localization/localized_images.png)  
