@@ -15,4 +15,6 @@ It seems that changing the name of a project is easy, but it may remain somethin
 
 4、Change the names of some directories and the paths of files if necessary.
 
+5、Delete old Targets and add new Targets in Edit Scheme... -> Build.
+
 Refer to: <http://matthewfecher.com/app-developement/xcode-tips-the-best-way-to-change-a-project-name-in-xcode/>
