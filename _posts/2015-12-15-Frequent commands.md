@@ -52,6 +52,7 @@ Sync with author after fork
 
 `$ git clone -b <branch> <remote_repo>`  
 `$ git branch -d[D] testing`  
+`$ git branch -d example-branch`  
 
 `$ git fetch origin develop:develop`  
 `$ git fetch origin coderA:coderA`  
