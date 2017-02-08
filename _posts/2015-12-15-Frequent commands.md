@@ -16,6 +16,12 @@ title: Frequent commands
 `$ rvm use ruby-1.9.3-p448`  
 `$ pod search AFNetworking`  
 `$ pod spec create [NAME|https://github.com/USER/REPO]`  
+`$ mkdir -p $HOME/Software/ruby`  
+`$ export GEM_HOME=$HOME/Software/ruby`  
+`$ gem install cocoapods`  
+`$ gem installed`  
+`$ export PATH=$PATH:$HOME/Software/ruby/bin`  
+`$ pod --version`  
 
 ### Git
 Sync with author after fork  
