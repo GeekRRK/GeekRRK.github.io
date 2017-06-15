@@ -2,26 +2,26 @@
 layout: post
 title: Design Pattern
 ---
-## Singleton Pattern
+### Singleton Pattern
 
-## Observer Pattern
+### Observer Pattern
 
-## Adapter Pattern
+### Adapter Pattern
 
-## Strategy Pattern
+### Strategy Pattern
 
-## Composite Pattern
+### Composite Pattern
 
-## Decorator Pattern
+### Decorator Pattern
 
-## State Pattern
+### State Pattern
 
-## Command Pattern
+### Command Pattern
 
-## Proxy Pattern
+### Proxy Pattern
 
-## Bridge Pattern
+### Bridge Pattern
 
-## Iterator Pattern
+### Iterator Pattern
 
-## Facade Pattern
+### Facade Pattern
