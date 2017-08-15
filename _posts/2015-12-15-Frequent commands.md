@@ -76,6 +76,9 @@ Sync with author after fork
 `$ git branch -d example-branch`  
 `$ git push origin :<branchName>`  
 `$ git push origin --delete <branchName>`  
+`git branch -m master old-master`  
+`git branch -m seotweaks master`  
+`git push -f origin master`  
 
 ### Linux
 `$ find . -name “*.html” |xargs grep "hello world"`  
