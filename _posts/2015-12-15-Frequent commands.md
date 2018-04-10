@@ -55,6 +55,9 @@ Sync with author after fork
 `$ git push origin v1.0.1`  
 `$ git push origin --tags`  
 `$ git checkout -b version1 v1.0.1`  
+`$ git checkout tags/v1.0`  
+`$ git checkout tags/v1.0 -b NewBranch`  
+`$ git tag -a v1.0 -m 'tagging Version 1.0'`  
 
 `$ git clone -b <branch> <remote_repo>`  
 `$ git branch -d[D] testing`  
