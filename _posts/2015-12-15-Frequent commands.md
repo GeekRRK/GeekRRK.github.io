@@ -58,6 +58,8 @@ Sync with author after fork
 `$ git checkout tags/v1.0`  
 `$ git checkout tags/v1.0 -b NewBranch`  
 `$ git tag -a v1.0 -m 'tagging Version 1.0'`  
+`$ git push origin :tagname`  
+`$ git tag --delete tagname`  
 
 `$ git clone -b <branch> <remote_repo>`  
 `$ git branch -d[D] testing`  
