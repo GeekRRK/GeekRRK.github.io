@@ -75,6 +75,8 @@ Sync with author after fork
 `$ git reset [--hard]`  
 `$ git revert`  
 `$ git reflog`  
+`$ git reset --hard HEAD~1`  
+`$ git push origin HEAD --force`  
 
 `$ git commit --amend`  
 `$ git push --force example-branch`  
